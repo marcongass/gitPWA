@@ -1,4 +1,6 @@
-﻿create procedure AgregarFavorito 
+﻿--comment
+
+create procedure AgregarFavorito 
 	@idFavorito as uniqueidentifier, @idMedia as int, @comentario as nvarchar(max), @puntuacion as decimal(18,0), @idUsuario as uniqueidentifier
 as
 begin
