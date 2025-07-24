@@ -6,8 +6,5 @@ progra web avanzada marco bruno
 ¡Bienvenido al repositorio del test de Programación Web Avanzada! 🚀
 
 
-- 🔧 Uso de frameworks modernos
-- 🎯 Lógica de programación avanzada
-- 🗂️ Consumo y gestión de APIs
-- 💻 Buenas prácticas en el frontend/backend
-
+algo malo?
+commit con gitflow
