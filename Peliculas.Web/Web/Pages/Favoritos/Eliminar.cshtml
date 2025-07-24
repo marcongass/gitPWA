@@ -1,0 +1,28 @@
+﻿@page
+@model Web.Pages.Favoritos.EliminarModel
+@{
+}
+
+
+<h1>Eliminar Favorito</h1>
+
+<div class="container">
+    <form method="post">
+        <div class="row">
+            <div class="col">            
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelo => Model.favorito.idMedia)</h5>
+                        <p class="card-text">
+                            <span class="fw-bold">@Html.DisplayNameFor(modelo => Model.favorito.Puntuacion): </span> @Html.DisplayFor(modelo => Model.favorito.Puntuacion)
+                            <span class="fw-bold">@Html.DisplayNameFor(modelo => Model.favorito.Comentario): </span>@Html.DisplayFor(modelo => Model.favorito.Comentario)
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <a type="button" class="btn btn-primary" asp-page="./Index">Volver</a>
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+    </form>
+</div>

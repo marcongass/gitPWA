@@ -1,0 +1,28 @@
+﻿@page
+@model Web.Pages.Favoritos.IndexModel
+@{
+}
+<h1>Listado de Favoritos</h1>
+
+<div class="container">
+    <div class="row">
+        @if (Model.favoritos != null)
+            @foreach (var favorito in Model.favoritos)
+            {
+                <div class="col-md-4 my-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <p><span class="fw-bold">Pelicula:</span> @Html.DisplayFor(modelo => favorito.idMedia)</p>
+                            </div>
+                            <p>Puntucacion: @Html.DisplayFor(modelo => favorito.Puntuacion)</p>
+                            <p>Comentario: @Html.DisplayFor(modelo => favorito.Comentario)</p>
+                            <a type="button" class="btn btn-info" asp-page="./Detalle" asp-route-id="@favorito.idFavorito">Detalle</a>
+                            <a type="button" class="btn btn-success" asp-page="./Editar" asp-route-id="@favorito.idFavorito">Editar</a>
+                            <a type="button" class="btn btn-danger" asp-page="./Eliminar" asp-route-id="@favorito.idFavorito">Eliminar</a>
+                        </div>
+                    </div>
+                </div>
+            }
+    </div>
+</div>
